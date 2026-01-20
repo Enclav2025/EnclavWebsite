@@ -1,0 +1,524 @@
+<!-- @format -->
+
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
+    <link href="assets/css/styles.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindplus/elements@1" type="module"></script>
+    <title>Enclav - Digital Trust for the Mobile-First World</title>
+  </head>
+  <body>
+    <div class="bg-white">
+      <header class="absolute inset-x-0 top-0 z-50">
+        <nav aria-label="Global" class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8">
+          <a href="/" class="-m-1.5 p-1.5">
+            <span class="sr-only">Enclav</span>
+            <img src="assets/img/logo/Enclav Icon.png" alt="Enclav Logo" class="h-8 w-auto" />
+          </a>
+          <div class="flex flex-1 justify-start pl-2 sm:pl-4 md:pl-6 lg:pl-8">
+            <div class="flex-nowrap items-center gap-2 rounded-full px-3 py-2 text-xs/4 whitespace-nowrap border border-enclav-blue flex">
+              <span class="font-medium">Digital Trust for the Mobile-First World</span>
+            </div>
+          </div>
+          <div class="flex lg:hidden">
+            <button type="button" command="show-modal" commandfor="mobile-menu" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
+              <span class="sr-only">Open main menu</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-6">
+                <path d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </button>
+          </div>
+          <div class="hidden lg:flex lg:gap-x-12">
+            <a href="#features" class="text-sm/6 font-semibold text-gray-900">Features</a>
+            <a href="#testimonials" class="text-sm/6 font-semibold text-gray-900">Testimonials</a>
+            <a href="#faqs" class="text-sm/6 font-semibold text-gray-900">FAQs</a>
+
+            <a href="mailto:enclav.business@gmail.com" class="text-sm/6 font-semibold text-gray-900 btn-contact">Contact Us <span aria-hidden="true">&rarr;</span></a>
+          </div>
+        </nav>
+        <el-dialog>
+          <dialog id="mobile-menu" class="backdrop:bg-transparent lg:hidden">
+            <div tabindex="0" class="fixed inset-0 focus:outline-none">
+              <el-dialog-panel class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white p-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+                <div class="flex items-center justify-between">
+                  <a href="/" class="-m-1.5 p-1.5">
+                    <span class="sr-only">Enclav</span>
+                    <img src="assets/img/logo/Enclav Icon.png" alt="Enclav Logo" class="h-8 w-auto" />
+                  </a>
+                  <div class="flex flex-1 justify-start pl-8">
+                    <div class="flex-nowrap items-center gap-2 rounded-full px-3 py-2 text-xs/4 whitespace-nowrap border border-enclav-purple flex">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true" data-slot="icon" class="size-4 fill-sky-500">
+                        <path fill-rule="evenodd" d="M5 4a.75.75 0 0 1 .738.616l.252 1.388A1.25 1.25 0 0 0 6.996 7.01l1.388.252a.75.75 0 0 1 0 1.476l-1.388.252A1.25 1.25 0 0 0 5.99 9.996l-.252 1.388a.75.75 0 0 1-1.476 0L4.01 9.996A1.25 1.25 0 0 0 3.004 8.99l-1.388-.252a.75.75 0 0 1 0-1.476l1.388-.252A1.25 1.25 0 0 0 4.01 6.004l.252-1.388A.75.75 0 0 1 5 4ZM12 1a.75.75 0 0 1 .721.544l.195.682c.118.415.443.74.858.858l.682.195a.75.75 0 0 1 0 1.442l-.682.195a1.25 1.25 0 0 0-.858.858l-.195.682a.75.75 0 0 1-1.442 0l-.195-.682a1.25 1.25 0 0 0-.858-.858l-.682-.195a.75.75 0 0 1 0-1.442l.682-.195a1.25 1.25 0 0 0 .858-.858l.195-.682A.75.75 0 0 1 12 1ZM10 11a.75.75 0 0 1 .728.568.968.968 0 0 0 .704.704.75.75 0 0 1 0 1.456.968.968 0 0 0-.704.704.75.75 0 0 1-1.456 0 .968.968 0 0 0-.704-.704.75.75 0 0 1 0-1.456.968.968 0 0 0 .704-.704A.75.75 0 0 1 10 11Z" clip-rule="evenodd"></path>
+                      </svg>
+                      <span class="font-medium">v1.0.3 now live!</span>
+                    </div>
+                  </div>
+                  <button type="button" command="close" commandfor="mobile-menu" class="-m-2.5 rounded-md p-2.5 text-gray-700">
+                    <span class="sr-only">Close menu</span>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-6">
+                      <path d="M6 18 18 6M6 6l12 12" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </button>
+                </div>
+                <div class="mt-6 flow-root">
+                  <div class="-my-6 divide-y divide-gray-500/10">
+                    <div class="space-y-2 py-6">
+                      <a href="#features" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Features</a>
+                      <a href="#testimonials" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Testimonials</a>
+                      <a href="#faqs" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">FAQs</a>
+                    </div>
+                    <div class="py-6">
+                      <a href="mailto:enclav.business@gmail.com" class="-mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-semibold text-gray-900 hover:bg-gray-50 btn-contact">Contact Us</a>
+                    </div>
+                  </div>
+                </div>
+              </el-dialog-panel>
+            </div>
+          </dialog>
+        </el-dialog>
+      </header>
+    </div>
+
+    <main>
+      <section class="relative isolate px-6 pt-7 lg:px-8">
+        <svg aria-hidden="true" class="absolute inset-0 -z-10 hidden size-full mask-[radial-gradient(64rem_64rem_at_top,white,transparent)] stroke-enclav-blue/10 sm:block">
+          <defs>
+            <pattern id="55d3d46d-692e-45f2-becd-d8bdc9344f45" width="200" height="200" x="50%" y="0" patternUnits="userSpaceOnUse">
+              <path d="M.5 200V.5H200" fill="none" />
+            </pattern>
+          </defs>
+
+          <svg x="50%" y="0" class="overflow-visible fill-enclav-blue/5">
+            <path d="M-200.5 0h201v201h-201Z M599.5 0h201v201h-201Z M399.5 400h201v201h-201Z M-400.5 600h201v201h-201Z" stroke-width="0" />
+          </svg>
+
+          <rect width="100%" height="100%" fill="url(#55d3d46d-692e-45f2-becd-d8bdc9344f45)" stroke-width="0" />
+        </svg>
+        <div class="mx-auto max-w-3xl py-32 sm:py-48 lg:py-64">
+          <div class="text-center">
+            <img src="assets/img/logo/Enclav Single Line.png" alt="Enclav Logo" class="h-11 mx-auto mb-10" />
+            <h1 class="text-5xl font-semibold tracking-tight text-balance text-gray-900 md:text-7xl">Secure Mobile Apps. Trusted Digital Identity. Fraud Resilience Built-In.</h1>
+            <p class="mt-8 text-lg font-medium text-pretty text-gray-500 md:text-xl/8">Enclav provides unified mobile app security, identity verification, and fraud intelligence to protect digital platforms from onboarding to transaction.</p>
+            <div class="mt-10 flex items-center justify-center gap-x-6">
+              <a href="mailto:enclav.business@gmail.com" class="rounded-md bg-linear-to-bl from-enclav-blue to-enclav-purple px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:from-enclav-purple hover:to-enclav-blue transition-colors duration-150 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-enclav-blue/80 btn-contact">Book a Free Consultation</a>
+              <a href="mailto:enclav.business@gmail.com" class="text-sm/6 font-semibold text-gray-900 btn-contact">Contact Us <span aria-hidden="true">→</span></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-enclav-blue/3 py-24 sm:py-32">
+        <div class="mx-auto max-w-2xl px-6 lg:max-w-7xl lg:px-8">
+          <h2 class="text-center text-base/7 font-semibold text-enclav-purple">Onboarding to transaction</h2>
+          <p class="mx-auto mt-2 max-w-lg text-center text-4xl font-semibold tracking-tight text-balance text-gray-950 sm:text-5xl">Everything you need to protect your digital platforms</p>
+          <div class="mt-10 grid gap-4 sm:mt-16 lg:grid-cols-3 lg:grid-rows-2">
+            <div class="relative lg:row-span-2">
+              <div class="absolute inset-px rounded-lg bg-white lg:rounded-l-4xl"></div>
+              <div class="relative flex h-full flex-col overflow-hidden rounded-[calc(var(--radius-lg)+1px)] lg:rounded-l-[calc(2rem+1px)]">
+                <div class="px-8 pt-8 pb-3 sm:px-10 sm:pt-10 sm:pb-0">
+                  <p class="mt-2 text-lg font-medium tracking-tight text-gray-950 max-lg:text-center">Security</p>
+                  <p class="mt-2 max-w-lg text-sm/6 text-gray-600 max-lg:text-center">Enterprise-grade mobile security architecture.</p>
+                </div>
+                <div class="@container relative min-h-120 w-full grow max-lg:mx-auto max-lg:max-w-sm">
+                  <div class="absolute inset-x-10 top-10 bottom-0 overflow-hidden rounded-t-[12cqw] border-x-[3cqw] border-t-[3cqw] border-gray-700 bg-gray-900 shadow-2xl">
+                    <img src="assets/img/illustrations/secured.png" alt="" class="size-full object-cover object-top" />
+                  </div>
+                </div>
+              </div>
+              <div class="pointer-events-none absolute inset-px rounded-lg shadow-sm outline outline-black/5 lg:rounded-l-4xl"></div>
+            </div>
+            <div class="relative max-lg:row-start-1">
+              <div class="absolute inset-px rounded-lg bg-white max-lg:rounded-t-4xl"></div>
+              <div class="relative flex h-full flex-col overflow-hidden rounded-[calc(var(--radius-lg)+1px)] max-lg:rounded-t-[calc(2rem+1px)]">
+                <div class="px-8 pt-8 sm:px-10 sm:pt-10">
+                  <p class="mt-2 text-lg font-medium tracking-tight text-gray-950 max-lg:text-center">Compliant</p>
+                  <p class="mt-2 max-w-lg text-sm/6 text-gray-600 max-lg:text-center">ISO-ready processes & compliance-ready.</p>
+                </div>
+                <div class="flex flex-1 items-center justify-center px-8 max-lg:pt-10 max-lg:pb-12 sm:px-10 lg:pb-2">
+                  <img src="assets/img/illustrations/compliance.png" alt="" class="w-full max-lg:max-w-xs" />
+                </div>
+              </div>
+              <div class="pointer-events-none absolute inset-px rounded-lg shadow-sm outline outline-black/5 max-lg:rounded-t-4xl"></div>
+            </div>
+            <div class="relative max-lg:row-start-3 lg:col-start-2 lg:row-start-2">
+              <div class="absolute inset-px rounded-lg bg-white"></div>
+              <div class="relative flex h-full flex-col overflow-hidden rounded-[calc(var(--radius-lg)+1px)]">
+                <div class="px-8 pt-8 sm:px-10 sm:pt-10">
+                  <p class="mt-2 text-lg font-medium tracking-tight text-gray-950 max-lg:text-center">Scalability</p>
+                  <p class="mt-2 max-w-lg text-sm/6 text-gray-600 max-lg:text-center">Built to scale with high-growth platforms.</p>
+                </div>
+                <div class="flex flex-1 items-center justify-center px-8 max-lg:pt-10 max-lg:pb-12 sm:px-10 lg:pb-2">
+                  <img src="assets/img/illustrations/scalability.png" alt="" class="w-full max-lg:max-w-xs" />
+                </div>
+              </div>
+              <div class="pointer-events-none absolute inset-px rounded-lg shadow-sm outline outline-black/5"></div>
+            </div>
+            <div class="relative lg:row-span-2">
+              <div class="absolute inset-px rounded-lg bg-white max-lg:rounded-b-4xl lg:rounded-r-4xl"></div>
+              <div class="relative flex h-full flex-col overflow-hidden rounded-[calc(var(--radius-lg)+1px)] max-lg:rounded-b-[calc(2rem+1px)] lg:rounded-r-[calc(2rem+1px)]">
+                <div class="px-8 pt-8 pb-3 sm:px-10 sm:pt-10 sm:pb-0">
+                  <p class="mt-2 text-lg font-medium tracking-tight text-gray-950 max-lg:text-center">Integration</p>
+                  <p class="mt-2 max-w-lg text-sm/6 text-gray-600 max-lg:text-center">Designed for fintech, super apps, digital-first enterprises.</p>
+                </div>
+                <div class="relative min-h-120 w-full grow">
+                  <div class="absolute top-10 right-0 bottom-0 left-10 overflow-hidden rounded-tl-xl bg-gray-900 shadow-2xl outline outline-white/10">
+                    <div class="flex bg-gray-900 outline outline-white/5">
+                      <div class="-mb-px flex text-sm/6 font-medium text-gray-400">
+                        <div class="border-r border-b border-r-white/10 border-b-white/20 bg-white/5 px-4 py-2 text-white">Enclav.js</div>
+                        <div class="border-r border-gray-600/10 px-4 py-2">App.js</div>
+                      </div>
+                    </div>
+                    <div class="px-6 pt-6 pb-14">
+                      <pre style="tab-size: 2" class="text-[0.8125rem]/6 text-gray-300"><code>import { <span class="text-[#7dd3fc]">user</span> } from <span class="text-emerald-300">'enclav-sdk'</span>
+
+<span class="text-indigo-400">function verifyStaff</span>() {
+	const <span class="text-[#7dd3fc]">staff</span> = user.verify({
+		<span class="text-[#7dd3fc]">firstName</span>: <span class="text-emerald-300">'John'</span>,
+		<span class="text-[#7dd3fc]">lastName</span>: <span class="text-emerald-300">'Doe'</span>,
+		<span class="text-[#7dd3fc]">employeeId</span>: <span class="text-emerald-300">'JS525'</span>
+	})
+
+	if (<span class="text-[#7dd3fc]">staff</span>.isVerified) {
+		return <span class="text-emerald-300">'Access Approved'</span>
+	}
+
+	return <span class="text-emerald-300">'Verification Required'</span>
+}</code></pre>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="pointer-events-none absolute inset-px rounded-lg shadow-sm outline outline-black/5 max-lg:rounded-b-4xl lg:rounded-r-4xl"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="overflow-hidden bg-white py-24 sm:py-32 flex gap-24 sm:flex-32 flex-col" id="features">
+        <div class="mx-auto max-w-7xl px-6 lg:px-8">
+          <div class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
+            <div class="lg:ml-auto lg:pt-4 lg:pl-4">
+              <div class="lg:max-w-lg">
+                <h2 class="text-base/7 font-semibold text-enclav-purple">Features</h2>
+                <p class="mt-2 text-4xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-5xl">Mobile App Security</p>
+                <div class="mt-10 max-w-xl text-base/7 text-gray-600 lg:max-w-lg">
+                  <p>Enclav hardens mobile applications against modern threats using advanced, layered protection:</p>
+                  <ul role="list" class="mt-8 space-y-8 text-gray-600">
+                    <li class="flex gap-x-3">
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="mt-1 size-6 flex-none text-enclav-purple">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M18.364 18.364A9 9 0 0 0 5.636 5.636m12.728 12.728A9 9 0 0 1 5.636 5.636m12.728 12.728L5.636 5.636" />
+                      </svg>
+                      <span><strong class="font-semibold text-gray-900">Anti-tampering & anti-reverse engineering.</strong></span>
+                    </li>
+                    <li class="flex gap-x-3">
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="mt-1 size-6 flex-none text-enclav-purple">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m6.75 7.5 3 2.25-3 2.25m4.5 0h3m-9 8.25h13.5A2.25 2.25 0 0 0 21 18V6a2.25 2.25 0 0 0-2.25-2.25H5.25A2.25 2.25 0 0 0 3 6v12a2.25 2.25 0 0 0 2.25 2.25Z" />
+                      </svg>
+
+                      <span><strong class="font-semibold text-gray-900">Runtime automated self-protection (RASP).</strong></span>
+                    </li>
+                    <li class="flex gap-x-3">
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="mt-1 size-6 flex-none text-enclav-purple">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 1.5H8.25A2.25 2.25 0 0 0 6 3.75v16.5a2.25 2.25 0 0 0 2.25 2.25h7.5A2.25 2.25 0 0 0 18 20.25V3.75a2.25 2.25 0 0 0-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3" />
+                      </svg>
+
+                      <span><strong class="font-semibold text-gray-900">Device integrity checks & environment risk detection.</strong></span>
+                    </li>
+                    <li class="flex gap-x-3">
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="mt-1 size-6 flex-none text-enclav-purple">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M16.5 10.5V6.75a4.5 4.5 0 1 0-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 0 0 2.25-2.25v-6.75a2.25 2.25 0 0 0-2.25-2.25H6.75a2.25 2.25 0 0 0-2.25 2.25v6.75a2.25 2.25 0 0 0 2.25 2.25Z" />
+                      </svg>
+
+                      <span><strong class="font-semibold text-gray-900">Secure API communication and data protection.</strong></span>
+                    </li>
+                  </ul>
+                  <p class="mt-8">Protect your app from cloning, manipulation, and unauthorized access - without compromising performance.</p>
+                </div>
+              </div>
+            </div>
+            <div class="flex items-start justify-end lg:order-first">
+              <img width="2432" height="1442" src="assets/img/features/app-security.png" alt="" class="w-3xl max-w-none rounded-4xl shadow-2xl ring-1 ring-gray-400/10 sm:w-228" />
+            </div>
+          </div>
+        </div>
+
+        <div class="mx-auto max-w-7xl px-6 lg:px-8">
+          <div class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
+            <div class="lg:mr-auto lg:pt-4 lg:pr-4">
+              <div class="lg:max-w-lg">
+                <h2 class="text-base/7 font-semibold text-enclav-purple">Features</h2>
+                <p class="mt-2 text-4xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-5xl">eKYC & Digital Identity Workflows</p>
+                <div class="mt-10 max-w-xl text-base/7 text-gray-600 lg:max-w-lg">
+                  <p>Enclav enables secure, scalable identity verification with strong fraud resistance.</p>
+                  <ul role="list" class="mt-8 space-y-8 text-gray-600">
+                    <li class="flex gap-x-3">
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="mt-1 size-6 flex-none text-enclav-purple">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M7.864 4.243A7.5 7.5 0 0 1 19.5 10.5c0 2.92-.556 5.709-1.568 8.268M5.742 6.364A7.465 7.465 0 0 0 4.5 10.5a7.464 7.464 0 0 1-1.15 3.993m1.989 3.559A11.209 11.209 0 0 0 8.25 10.5a3.75 3.75 0 1 1 7.5 0c0 .527-.021 1.049-.064 1.565M12 10.5a14.94 14.94 0 0 1-3.6 9.75m6.633-4.596a18.666 18.666 0 0 1-2.485 5.33" />
+                      </svg>
+
+                      <span><strong class="font-semibold text-gray-900">Biometric verification and liveness detection.</strong></span>
+                    </li>
+                    <li class="flex gap-x-3">
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="mt-1 size-6 flex-none text-enclav-purple">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904 9 18.75l-.813-2.846a4.5 4.5 0 0 0-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 0 0 3.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 0 0 3.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 0 0-3.09 3.09ZM18.259 8.715 18 9.75l-.259-1.035a3.375 3.375 0 0 0-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 0 0 2.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 0 0 2.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 0 0-2.456 2.456ZM16.894 20.567 16.5 21.75l-.394-1.183a2.25 2.25 0 0 0-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 0 0 1.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 0 0 1.423 1.423l1.183.394-1.183.394a2.25 2.25 0 0 0-1.423 1.423Z" />
+                      </svg>
+
+                      <span><strong class="font-semibold text-gray-900">Deepfake detection to counter AI-generated fraud.</strong></span>
+                    </li>
+                    <li class="flex gap-x-3">
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="mt-1 size-6 flex-none text-enclav-purple">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 9h3.75M15 12h3.75M15 15h3.75M4.5 19.5h15a2.25 2.25 0 0 0 2.25-2.25V6.75A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25v10.5A2.25 2.25 0 0 0 4.5 19.5Zm6-10.125a1.875 1.875 0 1 1-3.75 0 1.875 1.875 0 0 1 3.75 0Zm1.294 6.336a6.721 6.721 0 0 1-3.17.789 6.721 6.721 0 0 1-3.168-.789 3.376 3.376 0 0 1 6.338 0Z" />
+                      </svg>
+
+                      <span><strong class="font-semibold text-gray-900">Automated identity document verification.</strong></span>
+                    </li>
+                    <li class="flex gap-x-3">
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="mt-1 size-6 flex-none text-enclav-purple">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 13.5V3.75m0 9.75a1.5 1.5 0 0 1 0 3m0-3a1.5 1.5 0 0 0 0 3m0 3.75V16.5m12-3V3.75m0 9.75a1.5 1.5 0 0 1 0 3m0-3a1.5 1.5 0 0 0 0 3m0 3.75V16.5m-6-9V3.75m0 3.75a1.5 1.5 0 0 1 0 3m0-3a1.5 1.5 0 0 0 0 3m0 9.75V10.5" />
+                      </svg>
+
+                      <span><strong class="font-semibold text-gray-900">Configurable onboarding and identity workflows.</strong></span>
+                    </li>
+                  </ul>
+                  <p class="mt-8">Deliver seamless onboarding while maintaining high trust and compliance standards.</p>
+                </div>
+              </div>
+            </div>
+            <div class="flex items-end justify-start lg:order-last">
+              <img width="2432" height="1442" src="assets/img/features/digital-identity.png" alt="" class="w-3xl max-w-none rounded-4xl shadow-2xl ring-1 ring-gray-400/10 sm:w-228" />
+            </div>
+          </div>
+        </div>
+
+        <div class="mx-auto max-w-7xl px-6 lg:px-8">
+          <div class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
+            <div class="lg:ml-auto lg:pt-4 lg:pl-4">
+              <div class="lg:max-w-lg">
+                <h2 class="text-base/7 font-semibold text-enclav-purple">Features</h2>
+                <p class="mt-2 text-4xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-5xl">Super App Development Enablement</p>
+                <div class="mt-10 max-w-xl text-base/7 text-gray-600 lg:max-w-lg">
+                  <p>Built to support modular, multi-service ecosystems:</p>
+                  <ul role="list" class="mt-8 space-y-8 text-gray-600">
+                    <li class="flex gap-x-3">
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="mt-1 size-6 flex-none text-enclav-purple">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 21v-8.25M15.75 21v-8.25M8.25 21v-8.25M3 9l9-6 9 6m-1.5 12V10.332A48.36 48.36 0 0 0 12 9.75c-2.551 0-5.056.2-7.5.582V21M3 21h18M12 6.75h.008v.008H12V6.75Z" />
+                      </svg>
+
+                      <span><strong class="font-semibold text-gray-900">Secure financial service architecture.</strong></span>
+                    </li>
+                    <li class="flex gap-x-3">
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="mt-1 size-6 flex-none text-enclav-purple">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 19.128a9.38 9.38 0 0 0 2.625.372 9.337 9.337 0 0 0 4.121-.952 4.125 4.125 0 0 0-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 0 1 8.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0 1 11.964-3.07M12 6.375a3.375 3.375 0 1 1-6.75 0 3.375 3.375 0 0 1 6.75 0Zm8.25 2.25a2.625 2.625 0 1 1-5.25 0 2.625 2.625 0 0 1 5.25 0Z" />
+                      </svg>
+
+                      <span><strong class="font-semibold text-gray-900">Scalable user management and identity layers.</strong></span>
+                    </li>
+                    <li class="flex gap-x-3">
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="mt-1 size-6 flex-none text-enclav-purple">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 18.75a60.07 60.07 0 0 1 15.797 2.101c.727.198 1.453-.342 1.453-1.096V18.75M3.75 4.5v.75A.75.75 0 0 1 3 6h-.75m0 0v-.375c0-.621.504-1.125 1.125-1.125H20.25M2.25 6v9m18-10.5v.75c0 .414.336.75.75.75h.75m-1.5-1.5h.375c.621 0 1.125.504 1.125 1.125v9.75c0 .621-.504 1.125-1.125 1.125h-.375m1.5-1.5H21a.75.75 0 0 0-.75.75v.75m0 0H3.75m0 0h-.375a1.125 1.125 0 0 1-1.125-1.125V15m1.5 1.5v-.75A.75.75 0 0 0 3 15h-.75M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm3 0h.008v.008H18V10.5Zm-12 0h.008v.008H6V10.5Z" />
+                      </svg>
+
+                      <span><strong class="font-semibold text-gray-900">Orchestration across wallets, rewards, and commerce.</strong></span>
+                    </li>
+                    <li class="flex gap-x-3">
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="mt-1 size-6 flex-none text-enclav-purple">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M3 8.25V18a2.25 2.25 0 0 0 2.25 2.25h13.5A2.25 2.25 0 0 0 21 18V8.25m-18 0V6a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 6v2.25m-18 0h18M5.25 6h.008v.008H5.25V6ZM7.5 6h.008v.008H7.5V6Zm2.25 0h.008v.008H9.75V6Z" />
+                      </svg>
+
+                      <span><strong class="font-semibold text-gray-900">Seamless expansion across services and partners.</strong></span>
+                    </li>
+                  </ul>
+                  <p class="mt-8">Accelerate your super app roadmap with security designed for complexity.</p>
+                </div>
+              </div>
+            </div>
+            <div class="flex items-start justify-end lg:order-first">
+              <img width="2432" height="1442" src="assets/img/features/super-app.png" alt="" class="w-3xl max-w-none rounded-4xl shadow-2xl ring-1 ring-gray-400/10 sm:w-228" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-enclav-blue/3 pt-24 pb-32 sm:pt-32" id="testimonials">
+        <div class="mx-auto max-w-7xl px-6 lg:px-8">
+          <div class="px-6 lg:px-8">
+            <figure class="mx-auto max-w-2xl">
+              <p class="sr-only">5 out of 5 stars</p>
+              <div class="flex gap-x-1 text-enclav-purple">
+                <svg viewBox="0 0 20 20" fill="currentColor" data-slot="icon" aria-hidden="true" class="size-5 flex-none">
+                  <path d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401Z" clip-rule="evenodd" fill-rule="evenodd" />
+                </svg>
+                <svg viewBox="0 0 20 20" fill="currentColor" data-slot="icon" aria-hidden="true" class="size-5 flex-none">
+                  <path d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401Z" clip-rule="evenodd" fill-rule="evenodd" />
+                </svg>
+                <svg viewBox="0 0 20 20" fill="currentColor" data-slot="icon" aria-hidden="true" class="size-5 flex-none">
+                  <path d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401Z" clip-rule="evenodd" fill-rule="evenodd" />
+                </svg>
+                <svg viewBox="0 0 20 20" fill="currentColor" data-slot="icon" aria-hidden="true" class="size-5 flex-none">
+                  <path d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401Z" clip-rule="evenodd" fill-rule="evenodd" />
+                </svg>
+                <svg viewBox="0 0 20 20" fill="currentColor" data-slot="icon" aria-hidden="true" class="size-5 flex-none">
+                  <path d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401Z" clip-rule="evenodd" fill-rule="evenodd" />
+                </svg>
+              </div>
+              <blockquote class="mt-10 text-xl/8 font-semibold tracking-tight text-gray-900 sm:text-2xl/9">
+                <p>"We needed a way to handle mobile security without the usual complexity, and this trust layer was the answer. It's a smart, future-proof approach for any modern ecosystem. It's given us the precise protection we were looking for to help our platform grow the right way."</p>
+              </blockquote>
+              <figcaption class="mt-10 flex items-center gap-x-6">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-12">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M17.982 18.725A7.488 7.488 0 0 0 12 15.75a7.488 7.488 0 0 0-5.982 2.975m11.963 0a9 9 0 1 0-11.963 0m11.963 0A8.966 8.966 0 0 1 12 21a8.966 8.966 0 0 1-5.982-2.275M15 9.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                </svg>
+
+                <div class="text-sm/6">
+                  <div class="font-semibold text-gray-900">Mr Low</div>
+                  <div class="mt-0.5 text-gray-600">Product Consultant</div>
+                </div>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-white" id="faqs">
+        <div class="mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:px-8 lg:py-40">
+          <div class="mx-auto max-w-4xl">
+            <h2 class="text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">Frequently asked questions</h2>
+            <dl class="mt-16 divide-y divide-gray-900/10">
+              <div class="py-6 first:pt-0 last:pb-0">
+                <dt>
+                  <button type="button" command="--toggle" commandfor="faq-0" class="flex w-full items-start justify-between text-left text-gray-900">
+                    <span class="text-base/7 font-semibold">Who is Enclav for?</span>
+                    <span class="ml-6 flex h-7 items-center">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-6 in-aria-expanded:hidden">
+                        <path d="M12 6v12m6-6H6" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-6 not-in-aria-expanded:hidden">
+                        <path d="M18 12H6" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+                    </span>
+                  </button>
+                </dt>
+                <el-disclosure id="faq-0" class="contents">
+                  <dd class="mt-2 pr-12">
+                    <p class="text-base/7 text-gray-600">Enclav is ideal for fintechs, super apps, digital banks, e-commerce platforms, and any mobile-first business requiring strong security and identity verification.</p>
+                  </dd>
+                </el-disclosure>
+              </div>
+              <div class="py-6 first:pt-0 last:pb-0">
+                <dt>
+                  <button type="button" command="--toggle" commandfor="faq-1" class="flex w-full items-start justify-between text-left text-gray-900">
+                    <span class="text-base/7 font-semibold">Do I need all three solutions?</span>
+                    <span class="ml-6 flex h-7 items-center">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-6 in-aria-expanded:hidden">
+                        <path d="M12 6v12m6-6H6" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-6 not-in-aria-expanded:hidden">
+                        <path d="M18 12H6" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+                    </span>
+                  </button>
+                </dt>
+                <el-disclosure id="faq-1" hidden class="contents">
+                  <dd class="mt-2 pr-12">
+                    <p class="text-base/7 text-gray-600">No. Enclav is modular. You can deploy security, identity, or fraud capabilities and scale as your platform grows.</p>
+                  </dd>
+                </el-disclosure>
+              </div>
+              <div class="py-6 first:pt-0 last:pb-0">
+                <dt>
+                  <button type="button" command="--toggle" commandfor="faq-2" class="flex w-full items-start justify-between text-left text-gray-900">
+                    <span class="text-base/7 font-semibold">How fast can Enclav be implemented?</span>
+                    <span class="ml-6 flex h-7 items-center">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-6 in-aria-expanded:hidden">
+                        <path d="M12 6v12m6-6H6" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-6 not-in-aria-expanded:hidden">
+                        <path d="M18 12H6" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+                    </span>
+                  </button>
+                </dt>
+                <el-disclosure id="faq-2" hidden class="contents">
+                  <dd class="mt-2 pr-12">
+                    <p class="text-base/7 text-gray-600">Typically days to weeks, depending on your app architecture.</p>
+                  </dd>
+                </el-disclosure>
+              </div>
+              <div class="py-6 first:pt-0 last:pb-0">
+                <dt>
+                  <button type="button" command="--toggle" commandfor="faq-3" class="flex w-full items-start justify-between text-left text-gray-900">
+                    <span class="text-base/7 font-semibold">Does Enclav support deepfake detection?</span>
+                    <span class="ml-6 flex h-7 items-center">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-6 in-aria-expanded:hidden">
+                        <path d="M12 6v12m6-6H6" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-6 not-in-aria-expanded:hidden">
+                        <path d="M18 12H6" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+                    </span>
+                  </button>
+                </dt>
+                <el-disclosure id="faq-3" hidden class="contents">
+                  <dd class="mt-2 pr-12">
+                    <p class="text-base/7 text-gray-600">Yes. Deepfake resistance is integrated embedded within our advanced identity workflow engine.</p>
+                  </dd>
+                </el-disclosure>
+              </div>
+              <div class="py-6 first:pt-0 last:pb-0">
+                <dt>
+                  <button type="button" command="--toggle" commandfor="faq-4" class="flex w-full items-start justify-between text-left text-gray-900">
+                    <span class="text-base/7 font-semibold">Can Enclav support my upcoming super app roadmap?</span>
+                    <span class="ml-6 flex h-7 items-center">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-6 in-aria-expanded:hidden">
+                        <path d="M12 6v12m6-6H6" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-6 not-in-aria-expanded:hidden">
+                        <path d="M18 12H6" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+                    </span>
+                  </button>
+                </dt>
+                <el-disclosure id="faq-4" hidden class="contents">
+                  <dd class="mt-2 pr-12">
+                    <p class="text-base/7 text-gray-600">Yes. Enclav is designed to scale support expansion across services, users and partners.</p>
+                  </dd>
+                </el-disclosure>
+              </div>
+            </dl>
+          </div>
+        </div>
+      </section>
+
+      <section class="overflow-hidden bg-enclav-blue/3">
+        <div class="px-6 py-24 sm:py-32 lg:px-8">
+          <div class="mx-auto max-w-2xl text-center">
+            <h2 class="text-4xl font-semibold tracking-tight text-balance text-gray-900 sm:text-5xl">Protect your digital platform. Start using Enclav today.</h2>
+            <div class="mt-10 flex items-center justify-center gap-x-6">
+              <a href="mailto:enclav.business@gmail.com" class="rounded-md bg-linear-to-bl from-enclav-blue to-enclav-purple px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:from-enclav-purple hover:to-enclav-blue transition-colors duration-150 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-enclav-blue/80 btn-contact">Book a Free Consultation</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="bg-white">
+        <div class="mx-auto max-w-7xl overflow-hidden px-6 py-20 sm:py-24 lg:px-8">
+          <nav aria-label="Footer" class="flex flex-wrap justify-center gap-x-12 gap-y-3 text-sm/6">
+            <a href="#features" class="text-gray-600 hover:text-gray-900">Features</a>
+            <a href="#testimonials" class="text-gray-600 hover:text-gray-900">Testimonials</a>
+            <a href="#faqs" class="text-gray-600 hover:text-gray-900">FAQs</a>
+          </nav>
+          <nav aria-label="Social" class="mt-5 flex flex-wrap justify-center gap-x-12 gap-y-3 text-sm/6">
+            <a href="https://www.linkedin.com/company/enclav/" target="_blank" class="text-gray-600 hover:text-gray-900">LinkedIn</a>
+            <a href="mailto:enclav.business@gmail.com" target="_blank" class="text-gray-600 hover:text-gray-900 btn-contact">Email</a>
+          </nav>
+          <p class="mt-10 text-center text-sm/6 text-gray-600">&copy; 2025 Enclav - Digital Trust for the Mobile-First World. All rights reserved.</p>
+        </div>
+      </footer>
+    </main>
+
+    <script src="assets/js/scripts.js"></script>
+  </body>
+</html>
